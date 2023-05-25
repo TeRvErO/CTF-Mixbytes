@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 /*
 https://iopscience.iop.org/article/10.1088/1757-899X/928/3/032022/pdf
 https://www.halborn.com/blog/post/how-hackers-can-exploit-weak-ecdsa-signatures
+https://medium.com/asecuritysite-when-bob-met-alice/cracking-ecdsa-with-a-leak-of-the-random-nonce-d72c67f201cd
 https://ethereum.stackexchange.com/questions/20962/should-signed-text-messages-use-the-x19ethereum-signed-message-prefix/30173
 https://github.com/pubkey/eth-crypto#sign
 */
