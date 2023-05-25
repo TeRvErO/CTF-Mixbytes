@@ -1,0 +1,5 @@
+1. I have 100*10^18 debt tokens on my wallet
+2. Approve debt token for instance
+3. Send to instance 99*10^18 debt tokens
+4. instance.redeem(1, 99*10^18){from: your_address} - you will get 99*10^18 collateral tokens and send only 1 debt collateral
+5. instance.redeem(1, 98*10^18){from: your_address} - you will get 98*10^18 collateral tokens and send only 1 debt collateral
