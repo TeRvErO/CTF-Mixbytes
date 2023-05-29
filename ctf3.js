@@ -86,6 +86,12 @@ async function signMessage() {
 	const signature_withoutPrefix = EthCrypto.sign(privateKey, messageHash);
 	console.log(`Ethcrypto js`);
 	verifySignature(signature_withoutPrefix, messageHash, wallet.address);
+
+	let signing_key = new ethers.utils.SigningKey(privateKey);
+	console.log(`ethers signing key js`);
+	let signatureObj = signing_key.signDigest(messageHash);
+	let signatureStr = signatureObj.r + signatureObj.s.slice(2, 66) + (signatureObj.v).toString(16);
+	verifySignature(signatureStr, messageHash, wallet.address);
 }
 
 signMessage();
